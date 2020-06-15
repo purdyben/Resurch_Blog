@@ -1,7 +1,13 @@
 ---
 layout: post
-title:  "Progress!"
-date:   2020-06-11 11:04:12 -0500
-categories: jekyll update
+title:  "Code Progress!"
+date:   2020-05-11 11:04:12 -0500
+categories: A update
 ---
-DepthMap progress, code 
+Code update 
+Unity has been fun. Foundational code is 90% done before the inclusions of state scripts. As long as everything behaves we should be able to create methods check state() and SelectState() to change the state of each agent within the simulation independent. Now creating state scripts will be more tedious but should be able to tweak them until they run in a reasonable way. 
+
+* Things to do 
+* narrow down the core states a civilian and schooter and be in. 
+* create a general script layout and inherited function list
+* create testing inviorment for theses agents 
