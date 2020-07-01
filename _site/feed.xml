@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/Resurch_Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Resurch_Blog/" rel="alternate" type="text/html" /><updated>2020-07-01T12:40:19-05:00</updated><id>http://localhost:4000/Resurch_Blog/feed.xml</id><title type="html">Ben-Purdy Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">First scripting attempt: state machine</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/01/first-actions.html" rel="alternate" type="text/html" title="First scripting attempt: state machine" /><published>2020-07-01T09:55:51-05:00</published><updated>2020-07-01T09:55:51-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/01/first-actions</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/01/first-actions.html">&lt;p&gt;Test post pharagraph&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/Resurch_Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Resurch_Blog/" rel="alternate" type="text/html" /><updated>2020-07-01T16:02:24-05:00</updated><id>http://localhost:4000/Resurch_Blog/feed.xml</id><title type="html">Ben-Purdy Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">First scripting attempt: state machine</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html" rel="alternate" type="text/html" title="First scripting attempt: state machine" /><published>2020-06-30T09:55:51-05:00</published><updated>2020-06-30T09:55:51-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html">&lt;p&gt;Today I created the first test actions related to the AI system we’ve been developing for ASTERS. The three scripts Flee_danger_state.cs, Random_state.cs, and Find_exit.cs were implemented as a test of the state machine’s ability to change states on command. It was a successful test.&lt;/p&gt;
+
+&lt;p&gt;The second idea I tackle is how to select a point within a 2d plain that lets the agent move towards a goal or target object.
+This isn’t as easy but I was able to come up with an idea to locate a point of interest by gathering relevant data to make an informed decision in a very basic way. I will need to expand this out into a more concert implementation but its a starting point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/Pathimage.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“Things to do” identify the nearby object of interest, be able to turn and move down hallways and create a path within a script that survives multiple calls to start Coroutine()&lt;/p&gt;
+
+&lt;p&gt;Video issues&lt;/p&gt;
 
 &lt;style&gt;
 .grid-container {
@@ -13,18 +22,20 @@
 
 &lt;div class=&quot;.grid-container&quot;&gt;
 	&lt;div class=&quot;.grid-item&quot;&gt;
-		&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
-	  		&lt;source src=&quot;/assets/videoprogress1_first_scripts.mov&quot; /&gt;
+		&lt;p&gt;Moving tords exit&lt;/p&gt;
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot;&gt;
+	  		&lt;source src=&quot;../assets/videoprogress1_first_scripts.mov&quot; /&gt;
 		&lt;/video&gt;
 
 	&lt;/div&gt;
 	&lt;div class=&quot;.grid-item&quot;&gt;
-		&lt;video width=&quot;320&quot; height=&quot;240&quot; preload=&quot;&quot; controls=&quot;&quot;&gt;
+		&lt;p&gt;Moving away from shooter&lt;/p&gt;
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; preload=&quot;&quot; muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot;&gt;
 	  		&lt;source src=&quot;/assets/videoprogress2_first_scripts.mov&quot; /&gt;
 		&lt;/video&gt;
 
 	&lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Test post pharagraph</summary></entry><entry><title type="html">Ready to be back</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back.html" rel="alternate" type="text/html" title="Ready to be back" /><published>2020-06-25T09:30:13-05:00</published><updated>2020-06-25T09:30:13-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back.html">&lt;h1 id=&quot;hello&quot;&gt;hello,&lt;/h1&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Today I created the first test actions related to the AI system we’ve been developing for ASTERS. The three scripts Flee_danger_state.cs, Random_state.cs, and Find_exit.cs were implemented as a test of the state machine’s ability to change states on command. It was a successful test.</summary></entry><entry><title type="html">Ready to be back</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back.html" rel="alternate" type="text/html" title="Ready to be back" /><published>2020-06-25T09:30:13-05:00</published><updated>2020-06-25T09:30:13-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/25/Ready-to-be-back.html">&lt;h1 id=&quot;hello&quot;&gt;hello,&lt;/h1&gt;
 
 &lt;p&gt;Coming back to everything this week is a lot. I enjoyed colorado, but im ready to tackle it my workload and made some progress. Yesterday I was able to fix the surface level issues with the state machine implementation. I am sure there will be other issues, but I got Megan to move through repeated calls to coroutines.&lt;/p&gt;
 
