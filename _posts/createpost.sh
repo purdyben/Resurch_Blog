@@ -24,7 +24,6 @@ touch $FileName
 title=""
 if [ $2 == "-r" ]
 then 
-	echo $title
 	for ((i=1;i<=${#1};i++)); do
 	  	if [ ${1:$i-1:1} = "-" ]
 		then	
@@ -33,7 +32,6 @@ then
 			title+="${1:$i-1:1}"
 		fi
 	done
-	echo "$title"
 else
 	title= $1
 fi
