@@ -9,7 +9,7 @@ Today I created the first test actions related to the AI system we've been devel
 The second idea I tackle is how to select a point within a 2d plain that lets the agent move towards a goal or target object.
 This isn’t as easy but I was able to come up with an idea to locate a point of interest by gathering relevant data to make an informed decision in a very basic way. I will need to expand this out into a more concert implementation but its a starting point. 
 
-![image](../assets/Pathimage.png)
+![image](/Resurch_Blog/assets/Pathimage.png)
 
 “Things to do” identify the nearby object of interest, be able to turn and move down hallways and create a path within a script that survives multiple calls to start Coroutine() 
 
