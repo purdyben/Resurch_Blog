@@ -22,7 +22,7 @@ if ! [[ -f $FileName ]]
 touch $FileName
 #inset into the file
 title=""
-if [ $# -eq 2 && $2 == "-r" ]
+if [[ $# -eq 2 && $2 == "-r" ]]
 then 
 	for ((i=1;i<=${#1};i++)); do
 	  	if [ ${1:$i-1:1} = "-" ]
