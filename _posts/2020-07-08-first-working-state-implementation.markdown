@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Paths presisting from state to state."
-date:   2020-07-08-11:52:26 -0500 
+date:   2020-07-07-11:52:26 -0500 
 categories: jekyll update
 ---
 Another big update 
