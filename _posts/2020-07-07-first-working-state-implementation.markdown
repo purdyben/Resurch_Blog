@@ -9,7 +9,7 @@ Another big update
 I was able to change a static path that can switch between states. This can allow one state to switch or manipulate the path before returning to the original state. This is shown in the videoes where when the agent sees a shooter the path switches to a path heading away from the shooter.  Currently, only exits are an object of interest but this allows uses to test agents seeking finding and seeking exits. 
 
 
-{% include videos2.html %}
+{% include vid2.html %}
 
 - Yellow boxes are points stored along the path. 
 - Blue box is the players current point within the node path. 

@@ -1,9 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/Resurch_Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Resurch_Blog/" rel="alternate" type="text/html" /><updated>2020-07-03T10:14:49-05:00</updated><id>http://localhost:4000/Resurch_Blog/feed.xml</id><title type="html">Ben Purdy Blog</title><subtitle>this is my blog description</subtitle><entry><title type="html">First scripting attempt: state machine</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html" rel="alternate" type="text/html" title="First scripting attempt: state machine" /><published>2020-06-30T09:55:51-05:00</published><updated>2020-06-30T09:55:51-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html">&lt;p&gt;Today I created the first test actions related to the AI system we’ve been developing for ASTERS. The three scripts Flee_danger_state.cs, Random_state.cs, and Find_exit.cs were implemented as a test of the state machine’s ability to change states on command. It was a successful test.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/Resurch_Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Resurch_Blog/" rel="alternate" type="text/html" /><updated>2020-07-08T12:27:09-05:00</updated><id>http://localhost:4000/Resurch_Blog/feed.xml</id><title type="html">Ben Purdy Blog</title><subtitle>this is my blog description</subtitle><entry><title type="html">Paths presisting from state to state.</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/first-working-state-implementation.html" rel="alternate" type="text/html" title="Paths presisting from state to state." /><published>2020-07-07T11:52:26-05:00</published><updated>2020-07-07T11:52:26-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/first-working-state-implementation</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/first-working-state-implementation.html">&lt;p&gt;Another big update&lt;/p&gt;
+
+&lt;p&gt;I was able to change a static path that can switch between states. This can allow one state to switch or manipulate the path before returning to the original state. This is shown in the videoes where when the agent sees a shooter the path switches to a path heading away from the shooter.  Currently, only exits are an object of interest but this allows uses to test agents seeking finding and seeking exits.&lt;/p&gt;
+
+&lt;style&gt;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1;
+
+ }
+ .grid-item {
+ 	border: 1px solid rgba(0, 0, 0, 0.8);
+ }
+ &lt;/style&gt;
+
+&lt;div class=&quot;.grid-container&quot;&gt;
+	&lt;div class=&quot;.grid-item&quot;&gt;
+
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+	  		&lt;source type=&quot;video/mp4&quot; src=&quot;/Resurch_Blog/assets/videos/Recording1-2020-07-08.mp4&quot; /&gt;
+		&lt;/video&gt;
+
+	&lt;/div&gt;
+	&lt;div class=&quot;.grid-item&quot;&gt;
+		
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; preload=&quot;&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+	  		&lt;source type=&quot;video/mp4&quot; src=&quot;/Resurch_Blog/assets/videos/Recording2-2020-07-08.mp4&quot; /&gt;
+		&lt;/video&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Yellow boxes are points stored along the path.&lt;/li&gt;
+  &lt;li&gt;Blue box is the players current point within the node path.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Issues have come up related to what happends when a target object cannot be reached. I created a function which finds the closest reachable exit but its quite costly.  Its a quick fix but improvements can be made.&lt;/p&gt;
+
+&lt;p&gt;Im looking forword to a code review becuase im happy with my work I know ive cut corners when trying to brain storm and a fresh set of eyes would be appreciated.&lt;/p&gt;</content><author><name></name></author><summary type="html">Another big update</summary></entry><entry><title type="html">New path strategy.</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/path-manipulation.html" rel="alternate" type="text/html" title="New path strategy." /><published>2020-07-07T11:52:26-05:00</published><updated>2020-07-07T11:52:26-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/path-manipulation</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/07/07/path-manipulation.html">&lt;p&gt;I was able to figure out how to uses the built-in NavMeshPath functions within unity. This is a bit plus because obtaining a path between two objects can be costly and hard. I also built upon this path by storing the “corners” in a link list allowing me to insert new points between points. This idea will hopefully allow us to dynamically change the path using the stored points as of shoots when performing different actions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Resurch_Blog/assets/newboxpath.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I was able to figure out how to uses the built-in NavMeshPath functions within unity. This is a bit plus because obtaining a path between two objects can be costly and hard. I also built upon this path by storing the “corners” in a link list allowing me to insert new points between points. This idea will hopefully allow us to dynamically change the path using the stored points as of shoots when performing different actions.</summary></entry><entry><title type="html">First scripting attempt: state machine</title><link href="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html" rel="alternate" type="text/html" title="First scripting attempt: state machine" /><published>2020-06-30T09:55:51-05:00</published><updated>2020-06-30T09:55:51-05:00</updated><id>http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions</id><content type="html" xml:base="http://localhost:4000/Resurch_Blog/jekyll/update/2020/06/30/first-actions.html">&lt;p&gt;Today I created the first test actions related to the AI system we’ve been developing for ASTERS. The three scripts Flee_danger_state.cs, Random_state.cs, and Find_exit.cs were implemented as a test of the state machine’s ability to change states on command. It was a successful test.&lt;/p&gt;
 
 &lt;p&gt;The second idea I tackle is how to select a point within a 2d plain that lets the agent move towards a goal or target object.
 This isn’t as easy but I was able to come up with an idea to locate a point of interest by gathering relevant data to make an informed decision in a very basic way. I will need to expand this out into a more concert implementation but its a starting point.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/Pathimage.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Resurch_Blog/assets/Pathimage.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;“Things to do” identify the nearby object of interest, be able to turn and move down hallways and create a path within a script that survives multiple calls to start Coroutine()&lt;/p&gt;
 
@@ -23,15 +64,15 @@ This isn’t as easy but I was able to come up with an idea to locate a point of
 &lt;div class=&quot;.grid-container&quot;&gt;
 	&lt;div class=&quot;.grid-item&quot;&gt;
 		&lt;p&gt;Moving tords exit&lt;/p&gt;
-		&lt;video width=&quot;320&quot; height=&quot;240&quot; muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot;&gt;
-	  		&lt;source src=&quot;/assets/videos/videoprogress1_first_scripts.mov&quot; /&gt;
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+	  		&lt;source type=&quot;video/mp4&quot; src=&quot;/Resurch_Blog/assets/videos/videoprogress1_first_scripts.mp4&quot; /&gt;
 		&lt;/video&gt;
 
 	&lt;/div&gt;
 	&lt;div class=&quot;.grid-item&quot;&gt;
 		&lt;p&gt;Moving away from shooter&lt;/p&gt;
-		&lt;video width=&quot;320&quot; height=&quot;240&quot; preload=&quot;&quot; muted=&quot;&quot; autoplay=&quot;&quot; controls=&quot;&quot;&gt;
-	  		&lt;source src=&quot;/assets/videos/videoprogress2_first_scripts.mov&quot; /&gt;
+		&lt;video width=&quot;320&quot; height=&quot;240&quot; preload=&quot;&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+	  		&lt;source type=&quot;video/mp4&quot; src=&quot;/Resurch_Blog/assets/videos/videoprogress2_first_scripts.mp4&quot; /&gt;
 		&lt;/video&gt;
 
 	&lt;/div&gt;
