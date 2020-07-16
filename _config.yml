@@ -22,7 +22,7 @@ title: Ben Purdy Blog
 email: purdyben@iastate.edu
 description: >- # this means to ignore newlines until "baseurl:"
   this is my blog description
-baseurl: "Resurch_Blog" # the subpath of your site, e.g. /blog
+baseurl: "Research_Blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: N/A
 github_username:  purdyben
