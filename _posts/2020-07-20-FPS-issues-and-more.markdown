@@ -9,6 +9,7 @@ The code review is done and Jameel and I had a good meeting discussing changes a
 
 ![image](/Research_Blog/assets/B_FPS.png)
 
+
 Going looking into this I learned a lot about how unity regards science and how to maximize work done by the CPU and GPU. With some time I introduced Occlusion culling to the scene. This will minimize the rendered objects which are not in view. I also started introducing static batching to scene objects that are stationary.
 
 ![image](/Research_Blog/assets/After_FPS.png)
