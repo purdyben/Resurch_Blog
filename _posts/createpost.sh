@@ -15,6 +15,7 @@ else
 	FileName="$(date '+%Y-%m-%d')-$1.markdown"
 fi
 
+## change this to be -n NAME Spaced -r file-name and if -r = false create the file name with -n
 echo "created file $FileName" 
 #create file 
 if ! [[ -f $FileName ]] 
